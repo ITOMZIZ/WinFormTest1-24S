@@ -28,83 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            SuspendLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(56, 49);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(64, 65);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(114, 27);
+            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(272, 49);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 0;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(56, 195);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 0;
+            this.textBox2.Location = new System.Drawing.Point(311, 65);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(114, 27);
+            this.textBox2.TabIndex = 0;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(272, 195);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 0;
+            this.textBox4.Location = new System.Drawing.Point(64, 260);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(114, 27);
+            this.textBox4.TabIndex = 0;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(311, 260);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(114, 27);
+            this.textBox3.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(126, 98);
-            button1.Name = "button1";
-            button1.Size = new Size(154, 23);
-            button1.TabIndex = 1;
-            button1.Text = "دور في اتجاه عقارب الساعة";
-            button1.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(144, 131);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(176, 31);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "دور في اتجاه عقارب الساعة";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            button2.Location = new Point(126, 139);
-            button2.Name = "button2";
-            button2.Size = new Size(154, 23);
-            button2.TabIndex = 1;
-            button2.Text = "دور عكس اتجاه عقارب الساعة";
-            button2.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(144, 185);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(176, 31);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "دور عكس اتجاه عقارب الساعة";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(417, 289);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Name = "Form1";
-            Text = "Form1";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(477, 385);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
         private TextBox textBox4;
+        private TextBox textBox3;
         private Button button1;
         private Button button2;
     }
